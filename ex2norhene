@@ -1,0 +1,19 @@
+#include<iostream> 
+using namespace std; 
+  
+void complement(string number) 
+{  
+    for (int i=0 ; i < number.length() ; i++ ) 
+        if (number[i] != '.') 
+            number[i] = '9' - number[i] + '0'; 
+  
+    cout << "Complement de 9 est :  " << number; 
+} 
+  
+
+int main() 
+{ 
+    string number = "345.45"; 
+    complement(number); 
+    return 0; 
+} 
